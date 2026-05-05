@@ -21,25 +21,38 @@ class DatosPersonales {
 }
 let personas = []
 
+const cantidad = Number(prompt('cuantas personas desea registrar?'))
+
+for (let i = 0; i < cantidad; i++) {
 
 
 
-
-
-
-
-
-for (let i = 0; i < 5; i++) {
- 
     const nombre = prompt('dime tu nombre')
-const edad = Number(prompt('dime tu edad'))
-const genero = prompt('cual es tu genero')
+    const edad = Number(prompt('dime tu edad'))
+    const genero = prompt('cual es tu genero')
 
-const persona2 = new DatosPersonales(
-    nombre, edad, genero)
 
-    personas.push(persona2
+    const persona2 = new DatosPersonales(
+        nombre, edad, genero)
 
-    )
+    personas.push(persona2)
 }
+
 console.log(personas)
+
+
+let hombres = 0;
+let mujeres = 0;
+
+for (let i = 0; i < personas.length; i++) {
+
+    if (personas[i].genero === 'masculino') {
+        hombres++;
+    } else if (personas[i].genero === 'femenino') {
+        mujeres++;
+    }
+
+}
+
+console.log('Hombres: ', hombres);
+console.log('Mujeres: ', mujeres);
