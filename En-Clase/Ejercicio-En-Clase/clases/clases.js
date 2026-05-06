@@ -21,24 +21,21 @@ class DatosPersonales {
 }
 let personas = []
 
-const cantidad = Number(prompt('cuantas personas desea registrar?'))
+const cantidad = Number(prompt('cuantas personas desea registrar?'));
 
 for (let i = 0; i < cantidad; i++) {
 
-
-
-    const nombre = prompt('dime tu nombre')
-    const edad = Number(prompt('dime tu edad'))
-    const genero = prompt('cual es tu genero')
-
+    const nombre = prompt('dime tu nombre');
+    const edad = Number(prompt('dime tu edad'));
+    const genero = prompt('cual es tu genero');
 
     const persona2 = new DatosPersonales(
-        nombre, edad, genero)
+        nombre, edad, genero);
 
-    personas.push(persona2)
+    personas.push(persona2);
 }
 
-console.log(personas)
+console.log(personas);
 
 
 let hombres = 0;
