@@ -6,11 +6,7 @@ function paresEnRango (inicio,fin){
     for (let i = inicio; i <= fin; i++) {
         if(i % 2 == 0){
             lista.push(i)
-        }
-
-        
-        
-        
+        }  
     }
 
     console.log(lista)
