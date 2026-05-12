@@ -29,8 +29,19 @@ function saludoPersonalizado (nombre,hora){
     if (rango === 'mañana'){
         return `Buenos días ${nombre}`;
     }
+    else if (rango === 'tarde'){
+        return `Buenas tardes ${nombre}`;
+    }
 
-    
+    else if (rango === 'noche'){
+        return `Buenas noches ${nombre}`;
+    }
 
+    else{
+        `Es de madrugada ${nombre}`;
+    }
 
 }
+    let saludo = saludoPersonalizado (AnalyserNode, 15);
+
+    console.log(saludo)
